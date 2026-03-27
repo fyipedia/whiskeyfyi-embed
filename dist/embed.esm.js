@@ -1,4 +1,4 @@
-/* whiskeyfyi-embed v1.1.0 | MIT | https://widget.whiskeyfyi.com */
+/* whiskeyfyi-embed v1.1.1 | MIT | https://widget.whiskeyfyi.com */
 
 // src/styles/modern.ts
 function getModernCSS() {
