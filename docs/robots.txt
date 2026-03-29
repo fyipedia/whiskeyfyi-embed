@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# WhiskeyFYI Embed Widget
+# Main site: https://whiskeyfyi.com
+# Widget docs: https://widget.whiskeyfyi.com
+# npm: https://www.npmjs.com/package/whiskeyfyi-embed
