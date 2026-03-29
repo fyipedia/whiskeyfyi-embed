@@ -1,21 +1,53 @@
 # WhiskeyFYI Embed Widget
 
-> Embeddable WhiskeyFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> 80 whiskey expressions, distilleries. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/whiskeyfyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/whiskeyfyi-embed@1/dist/embed.min.js"></script>
+<div data-whiskeyfyi="flavor-radar" data-slug="example"></div>
+```
+
+## Available Widget Types (9)
+
+- recipe: `data-whiskeyfyi="recipe"`
+- compare: `data-whiskeyfyi="compare"`
+- glossary: `data-whiskeyfyi="glossary"`
+- faq: `data-whiskeyfyi="faq"`
+- guide: `data-whiskeyfyi="guide"`
+- ingredient: `data-whiskeyfyi="ingredient"`
+- pairing: `data-whiskeyfyi="pairing"`
+- search: `data-whiskeyfyi="search"`
+- flavor-radar (interactive): `data-whiskeyfyi="flavor-radar"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-whiskeyfyi="flavor-radar" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/whiskeyfyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://whiskeyfyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://whiskeyfyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://whiskeyfyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://whiskeyfyi.com
 - Widget docs: https://widget.whiskeyfyi.com
-- npm: https://www.npmjs.com/package/whiskeyfyi-embed
+- API documentation: https://whiskeyfyi.com/developers/
+- npm package: https://www.npmjs.com/package/whiskeyfyi-embed
 - GitHub: https://github.com/fyipedia/whiskeyfyi-embed
-- API: https://whiskeyfyi.com/developers/
 
-## Beverage FYI Widget Family
+## Beverage FYI Widget Network
 
 - [CocktailFYI Widget](https://widget.cocktailfyi.com)
 - [VinoFYI Widget](https://widget.vinofyi.com)
